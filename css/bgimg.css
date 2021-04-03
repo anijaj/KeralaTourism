@@ -10,7 +10,7 @@
 
 .distbody
 {
-    background-image: url("/images/distbg.jpg");
+    background-image: url("../images/distbg.jpg");
     background-size: cover;
     height: auto;
     width: auto;
@@ -19,7 +19,7 @@
 
 .loginbody
 {
-    background-image: url("/images/su.jpg");
+    background-image: url("../images/su.jpg");
     background-size: cover;
     height: auto;
     position: relative;
@@ -41,7 +41,7 @@
 
 #bg
 {
-    background-image: url("./images/cropped-banner_darjeeling.jpg");
+    background-image: url("../images/cropped-banner_darjeeling.jpg");
     background-position: center;
     height: 100%;
 }
