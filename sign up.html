@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign Up</title>
+</head>
+    <link rel="stylesheet" href="/boot/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bgimg.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>    
+
+    <body class="loginbody">
+      <!--Header-->
+      <div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+              <nav class="navbar navbar-light bg-light">
+                  <div class="container">
+                    <a class="navbar-brand " href="/index.html">
+                      <img src="/images/1200px-Kerala-God-s-Own-Country-Logo-svg-removebg-preview.png" height="50px">
+                    </a>
+                  </div>
+                </nav>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle navElements" id="navbarDropdown" href="/district.html" aria-haspopup="true" aria-expanded="false" >
+                    Districts
+                  </a>                
+                  <div class="dropdown-menu  dropdown-menu-animator" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/districts/alappuzha.html">Alappuzha</a>
+                      <a class="dropdown-item" href="/districts/ernakulam.html">Ernakulam</a>
+                      <a class="dropdown-item" href="/districts/idukki.html">Idukki</a>
+                      <a class="dropdown-item" href="/districts/kannur.html">Kannur</a>
+                      <a class="dropdown-item" href="/districts/kasargod.html">Kasargod</a>
+                      <a class="dropdown-item" href="/districts/kollam.html">Kollam</a>
+                      <a class="dropdown-item" href="/districts/kottayam.html">Kottayam</a>
+                      <a class="dropdown-item" href="/districts/kozhikode.html">Kozhikode</a>
+                      <a class="dropdown-item" href="/districts/malappuram.html">Malappuram</a>
+                      <a class="dropdown-item" href="/districts/palakkad.html">Palakkad</a>
+                      <a class="dropdown-item" href="/districts/pathanamthitta.html">Pathanamthitta</a>
+                      <a class="dropdown-item" href="/districts/thrissur.html">Thrissur</a>
+                      <a class="dropdown-item" href="/districts/trivandrum.html">Thiruvananthapuram</a>
+                      <a class="dropdown-item" href="/districts/wayanad.html">Wayanad</a>
+                  </div>
+                </li>
+                <li class="nav-item navElements">
+                  <a class="nav-link" href="/login.html">Login</a>
+                </li>
+                <li class="nav-item navElements">
+                  <a class="nav-link" href="/sign up.html">Sign Up</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!--Header Ends-->
+    
+    <!--Sign up-->
+    <div class="signup">
+      <h3 id="signtext">Not a Member? <br> Signup Here</h3> <br>
+      <form onsubmit="return validate()">
+          <div class="form-row">
+          <div class="form-group col-md-8 fieldDiv" style="width:auto;">
+              <input type="text" class="form-control" id="firstName" required placeholder="First Name">
+          </div><br>
+          <div class="form-group col-md-8" style="width: auto;">
+              <input type="text" class="form-control" id="lastName" required placeholder="Last Name">
+          </div>
+          </div><br>
+          <div class="form-group col-md-8" style="width: auto;">
+            <input type="text" class="form-control" id="Address" placeholder="Address">
+          </div><br>
+          <div class="form-group col-md-8" style="width: auto;">
+            <input type="text" class="form-control" id="City" placeholder="City" required>
+          </div><br>
+          <div class="form-group col-md-8" style="width: auto;">
+            <input type="text" class="form-control" id="Country" placeholder="Country" required>
+          </div><br>
+          <div class="form-group fieldDiv" style="margin-bottom: 0px;">
+          <div class="form-group fieldDiv" style="margin-bottom: 0px;">
+              <input type="tel" class="form-control" id="phoneNumber" required placeholder="Phone Number (10 digits)">
+              <label for="phoneNumber" class="errorLabel" id="numberError"></label>
+          </div><br>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+            <label class="form-check-label" for="exampleRadios1">
+              Female
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">
+              Male
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+            <label class="form-check-label" for="exampleRadios3">
+              Transgender
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option4">
+            <label class="form-check-label" for="exampleRadios4">
+              Others
+            </label>
+          </div>
+          <br>
+          <input type="email" class="form-control searchBox" id="signupEmail" placeholder="E-mail" required>
+          <label for="signupEmail" class="errorLabel" id="emailSignupError"></label>
+          </div>
+          <div class="form-group fieldDiv" style="margin-bottom: 0px;">
+            <input type="password" class="form-control" id="inputPass" placeholder="Password" oninput="passStrength()" required>
+            <div class="row">
+              <label for="inputPass" class="errorLabel col-sm-6" id="passError"></label>
+              <label for="inputPass" class="errorLabel col-md-6" id="passStrLabel"></label>
+            </div>
+        </div><br>
+        <div class="form-group fieldDiv" style="margin-bottom: 0px;">
+            <input type="password" class="form-control" id="inputConfPass" placeholder="Confirm Password" required>
+            <label for="inputConfPass" class="errorLabel" id="confError"></label>
+        </div><br>
+          <div class="form-group">
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck" required>
+              <label class="form-check-label" for="gridCheck" >
+              I accept the <a href="#"style="color: #1976D2;">Terms of Use</a> & <a href="#" style="color: #1976D2">Privacy Policy</span>
+              </label>
+          </div><br>
+          </div>
+          <button type="submit" class="btn btn-primary buttonGroup" id="signupBtn">Sign Up</button>
+      </form>
+  </div>
+    <!--Sign up-->
+
+    <!-- footer -->
+    <footer>
+      <div class="footer">
+        Created by Anija J
+      </div>
+    </footer>
+    <!-- footer ends -->
+
+    <script src="js/validation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+
+
+</body>
+</html>

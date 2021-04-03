@@ -1,0 +1,232 @@
+*{  padding: 0px;
+    margin: 0px;
+}
+
+
+.dbody{
+    background-size: cover;
+    height: 1800;
+}
+
+.homehead{
+
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+    top: 26%;
+    margin-top: 0;
+    z-index: 2;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 51px;
+}
+
+
+
+.distbody h1
+{
+    text-align: center; 
+    margin-bottom: 80px;
+    font-size: 50px;
+}
+
+.lead{
+    text-align: center;
+}
+
+.dropdown-menu .dropdown-item
+{
+    background-color: rgb(247, 247, 247);
+}
+
+.dropdown:hover .dropdown-menu 
+{
+    display: block;
+    background-color: rgb(243, 243, 243);
+    z-index: 100;
+}
+
+.dropdown-menu-animator{
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
+}
+
+.carousel-caption{
+    opacity:0;
+    transition:500ms ease-in-out;
+  }
+
+.carousel-item:hover .carousel-caption{
+    opacity:1;
+  }
+
+.carousel-item img
+  {
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+.carCapDiv
+  {
+      background: rgba(228, 226, 226, 0.7);
+      border-radius: 10px;
+      color: black;
+  }
+
+.caroClass
+  {
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    margin: auto;
+    margin-top: 55%;
+    height: 50%;
+    padding: 50px;
+  }
+
+#caroid
+  {
+      padding: 5px;
+      position: absolute;
+      left: 200px;
+      width: 1100px;
+      height: auto;
+      top: 40%;
+  }
+
+.heading
+{
+    position: absolute;
+    top: 30%;
+    margin-top: 0;
+    z-index: 2;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.heading h1
+{
+    font-size: 70px;
+    color: rgb(51, 184, 224);
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+.desc
+{
+    background: beige;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    top: 45%;
+    margin: auto;
+    padding: 45px;
+    border-radius: 20px;
+    width: 85%;
+    height: fit-content;
+}
+
+.desc p
+{
+    font-size: 18px;
+}
+
+.carclass
+  {
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    margin: auto;
+    margin-top: 50%;
+    padding: 50px;
+    height: fit-content;
+  }
+
+
+#coldist
+{   margin-top: 110px;
+    padding: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#rowdist
+{
+    margin-top: 40px;
+    padding: 38px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#capname
+{   
+    color: white;
+    font-weight: bold;
+    margin-top: auto;
+    text-decoration: none;
+    text-align: center;
+}
+
+.login
+{
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 50px;
+    border: 2px solid black;
+    margin-top: 75px;
+    margin-bottom: 80px;
+    margin-left: 35%;
+    margin-right: 150px;
+    width: 30%;
+    height: fit-content;
+}
+
+.col a:link 
+{
+    text-decoration: none;
+}
+
+#signtext
+{
+    font-weight: bold;
+}
+
+.signup
+{
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 50px;
+    border: 2px solid black;
+    margin-top: 75px;
+    margin-bottom: 80px;
+    margin-left: 35%;
+    margin-right: 150px;
+    width: 30%;
+    height: fit-content;
+}
+
+.errorLabel
+{
+    font-size: 0.9em;
+}
+
+#passstrength
+{
+    text-align: right;
+}
+
+.buttonGroup
+{
+    background-color: green;
+}
+
+.footer
+{
+    background-color: rgba(173, 156, 156, 0.7);
+    height: 55px;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+    color: black;
+    padding: 10px;
+    position: absolute;
+}

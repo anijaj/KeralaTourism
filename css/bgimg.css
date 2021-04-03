@@ -1,0 +1,49 @@
+.bg-image
+{
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    height: 100%;
+    background-repeat: repeat-y;
+    background-size: cover;
+    z-index: -1;
+}
+
+.distbody
+{
+    background-image: url("/images/distbg.jpg");
+    background-size: cover;
+    height: auto;
+    width: auto;
+    padding :0;
+}
+
+.loginbody
+{
+    background-image: url("/images/su.jpg");
+    background-size: cover;
+    height: auto;
+    position: relative;
+    width: auto;
+}
+
+.homebody
+{
+    background-size: cover;
+    height: 1240px;
+    
+}
+
+.aboutbody
+{
+    background-size: cover;
+    height: 1640px;
+}
+
+#bg
+{
+    background-image: url("/images/cropped-banner_darjeeling.jpg");
+    background-position: center;
+    height: 100%;
+}
+
+
