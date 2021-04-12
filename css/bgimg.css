@@ -3,6 +3,7 @@
     filter: blur(8px);
     -webkit-filter: blur(8px);
     height: 100%;
+    width: auto;
     background-repeat: repeat-y;
     background-size: cover;
     z-index: -1;
